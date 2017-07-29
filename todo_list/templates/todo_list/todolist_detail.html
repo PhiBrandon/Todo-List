@@ -1,0 +1,17 @@
+{% extends 'todo_list/header.html %}
+{% block content %}
+		<h1>{{object}}</h1>
+		<p>Time since started: {{object.started|timesince}} completed: {{object.completed}}</p>
+	
+
+	<!-- <div class="form">
+	<form method="POST" action="#"> 
+	{% csrf_token %}
+	<label for="task_name">Task Name:</label>
+	{{form.name}}
+
+	<input type="submit">
+	</form>
+
+	</div> -->
+{% endblock %}
